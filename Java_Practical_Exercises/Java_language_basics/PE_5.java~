@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class PE_5 {
+    public static void main(String[] args) {
+
+	String[] arr = new Scanner(System.in).readLine().split(" ");
+
+	int sum = 0;
+	for(String i : arr) {
+	    int currNum = Integer.parseInt(i);
+	    if (currNum < 0) {
+		System.out.println("You've entered a negative number. Please enter all positives.");
+		return ;
+	    }
+	    sum += currNum;
+	}
+
+	System.out.println(sum);
+    }
+
+}
