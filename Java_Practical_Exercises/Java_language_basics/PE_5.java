@@ -7,8 +7,12 @@ class PE_5 {
 	Scanner sc = new Scanner(System.in);
 
 	int sum = 0;
+	boolean end = false;
 
 	while(sc.hasNext()){
+	    String next = sc.next();
+	    if(next.equals("exit")) end = true;
+	    if(end) break;
 	    int a = Integer.parseInt(sc.next());
 	    if(a < 0) {
 		System.out.println("Error");

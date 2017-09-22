@@ -1,0 +1,7 @@
+
+public class PE3 {
+    public static void main(String[] args) {
+	MemberClass mc1 = new MemberClass("John", 28, 56.4);
+    }
+
+}
